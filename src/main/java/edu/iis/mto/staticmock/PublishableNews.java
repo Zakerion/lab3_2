@@ -14,13 +14,21 @@ public class PublishableNews {
 
 	public void addPublicInfo(String content) {
 		this.publicContent.add(content);
-		
+
 	}
 
 	public void addForSubscription(String content, SubsciptionType subscriptionType) {
-		
+
 		this.subscribentContent.add(content);
-		
+
+	}
+
+	public List<String> getPublicContent() {
+		return publicContent;
+	}
+
+	public List<String> getSubscribentContent() {
+		return subscribentContent;
 	}
 
 }
